@@ -1,0 +1,28 @@
+// manifest.json
+{
+  "manifest_version": 3,
+  "name": "YouTube Fresh Mode",
+  "version": "1.0",
+  "description": "Opens YouTube with a clean slate, free from personalized recommendations",
+  "permissions": [
+    "webRequest",
+    "cookies",
+    "storage",
+    "webRequestBlocking",
+    "*://*.youtube.com/*"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "YouTube Fresh Mode",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
